@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page title</title>
+  <style>
+    body {
+      text-align: center;
+      background: #F0F8FF;
+      color: #808080;
+      box-sizing: border-box;
+      height: 100dvh;
+    }
+    
+    .game-button {
+      display: inline-block;
+      padding: 5px 15px;
+      background-color: #3498db;
+      color: #ffffff;
+      /*font-size: 16px;*/
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .game-button:hover {
+      background-color: #2980b9;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 5px;
+     -webkit-user-select: none;
+    }
+    
+    .imageContainer {
+      padding-block: 10px;
+    }
+    
+    img {
+      width: 11%;
+      margin: 3px;
+    }
+    
+    p {
+      margin: 5px;
+    }
+    
+    a {
+      color: #808080;
+    }
+    
+    .hide {
+      filter: brightness(0);
+    }
+    
+    .show {
+      filter: brightness(1);
+    }
+    
+  </style>
+  
+</head>
+<body>
+  
+  <h1>Card Game (🟥🔴➕⭐)</h1>
+  
+ <div class="button-container">
+    <button class="game-button" onclick="shuffleImages()">
+      <h2>Shuffle Images first</h2>
+    </button>
+  </div>
+  
+
+    <!-- second image list-->
+ <div class="imageContainer">
+  <img class="hide" src="card-1-of-square.jpg">
+  <img class="hide" src="card-1-of-cicle.jpg">
+  <img class="hide" src="card-1-of-cross.jpg">
+  <img class="hide" src="card-1-of-star.jpg">
+  <img class="hide" src="card-2-of-square.jpg">
+  <img class="hide" src="card-2-of-cicle.jpg">
+  <img class="hide" src="card-2-of-cross.jpg">
+  <br>
+  <img class="hide" src="card-2-of-star.jpg">
+  <img class="hide" src="card-3-of-square.jpg">
+  <img class="hide" src="card-3-of-cicle.jpg">
+  <img class="hide" src="card-3-of-cross.jpg">
+  <img class="hide" src="card-3-of-star.jpg">
+  <img class="hide" src="card-4-of-square.jpg">
+  <img class="hide" src="card-4-of-cicle.jpg">
+  <br>
+  <img class="hide" src="card-4-of-cross.jpg">
+  <img class="hide" src="card-4-of-star.jpg">
+  <img class="hide" src="card-5-of-square.jpg">
+  <img class="hide" src="card-5-of-cicle.jpg">
+  <img class="hide" src="card-5-of-cross.jpg">
+  <img class="hide" src="card-5-of-star.jpg">
+  <img class="hide" src="card-6-of-square.jpg">
+  <br>
+  <img class="hide" src="card-6-of-cicle.jpg">
+  <img class="hide" src="card-6-of-cross.jpg">
+  <img class="hide" src="card-6-of-star.jpg">
+  <img class="hide" src="card-7-of-square.jpg">
+  <img class="hide" src="card-7-of-cicle.jpg">
+  <img class="hide" src="card-7-of-cross.jpg">
+  <img class="hide" src="card-7-of-star.jpg">
+  <br>
+   <!--
+   
+    <br>
+  <img class="hide" src="card-8-of-square.jpg">
+  <img class="hide" src="card-8-of-cicle.jpg">
+  <img class="hide" src="card-8-of-cross.jpg">
+  <img class="hide" src="card-8-of-star.jpg">
+  <img class="hide" src="card-9-of-square.jpg">
+  <img class="hide" src="card-9-of-cicle.jpg">
+  <img class="hide" src="card-9-of-cross.jpg">
+  <br>
+  <img class="hide" src="card-9-of-star.jpg">
+  <img class="hide" src="card-10-of-square.jpg">
+  <img class="hide" src="card-10-of-cicle.jpg">
+  <img class="hide" src="card-10-of-cross.jpg">
+  <img class="hide" src="card-10-of-star.jpg">
+  <img class="hide" src="card-11-of-square.jpg">
+  <img class="hide" src="card-11-of-cicle.jpg">
+  <br>
+  <img class="hide" src="card-11-of-cross.jpg">
+  <img class="hide" src="card-11-of-star.jpg">
+  <img class="hide" src="card-12-of-square.jpg">
+  <img class="hide" src="card-12-of-cicle.jpg">
+  <img class="hide" src="card-12-of-cross.jpg">
+  <img class="hide" src="card-12-of-star.jpg">
+  <img class="hide" src="card-13-of-square.jpg">
+  <br>
+  <img class="hide" src="card-13-of-cicle.jpg">
+  <img class="hide" src="card-13-of-cross.jpg">
+  <img class="hide" src="card-13-of-star.jpg">
+  <img class="hide" src="card-14-of-square.jpg">
+  <img class="hide" src="card-14-of-cicle.jpg">
+  <img class="hide" src="card-14-of-cross.jpg">
+  <img class="hide" src="card-14-of-star.jpg">
+  
+  -->
+  
+    <!-- second image list-->
+  <img class="hide" src="card-1-of-square.jpg">
+  <img class="hide" src="card-1-of-cicle.jpg">
+  <img class="hide" src="card-1-of-cross.jpg">
+  <img class="hide" src="card-1-of-star.jpg">
+  <img class="hide" src="card-2-of-square.jpg">
+  <img class="hide" src="card-2-of-cicle.jpg">
+  <img class="hide" src="card-2-of-cross.jpg">
+  <br>
+  <img class="hide" src="card-2-of-star.jpg">
+  <img class="hide" src="card-3-of-square.jpg">
+  <img class="hide" src="card-3-of-cicle.jpg">
+  <img class="hide" src="card-3-of-cross.jpg">
+  <img class="hide" src="card-3-of-star.jpg">
+  <img class="hide" src="card-4-of-square.jpg">
+  <img class="hide" src="card-4-of-cicle.jpg">
+  <br>
+  <img class="hide" src="card-4-of-cross.jpg">
+  <img class="hide" src="card-4-of-star.jpg">
+  <img class="hide" src="card-5-of-square.jpg">
+  <img class="hide" src="card-5-of-cicle.jpg">
+  <img class="hide" src="card-5-of-cross.jpg">
+  <img class="hide" src="card-5-of-star.jpg">
+  <img class="hide" src="card-6-of-square.jpg">
+  <br>
+  <img class="hide" src="card-6-of-cicle.jpg">
+  <img class="hide" src="card-6-of-cross.jpg">
+  <img class="hide" src="card-6-of-star.jpg">
+  <img class="hide" src="card-7-of-square.jpg">
+  <img class="hide" src="card-7-of-cicle.jpg">
+  <img class="hide" src="card-7-of-cross.jpg">
+  <img class="hide" src="card-7-of-star.jpg">
+  <br>
+  <!--
+  
+    <br>
+  <img class="hide" src="card-8-of-square.jpg">
+  <img class="hide" src="card-8-of-cicle.jpg">
+  <img class="hide" src="card-8-of-cross.jpg">
+  <img class="hide" src="card-8-of-star.jpg">
+  <img class="hide" src="card-9-of-square.jpg">
+  <img class="hide" src="card-9-of-cicle.jpg">
+  <img class="hide" src="card-9-of-cross.jpg">
+  <br>
+  <img class="hide" src="card-9-of-star.jpg">
+  <img class="hide" src="card-10-of-square.jpg">
+  <img class="hide" src="card-10-of-cicle.jpg">
+  <img class="hide" src="card-10-of-cross.jpg">
+  <img class="hide" src="card-10-of-star.jpg">
+  <img class="hide" src="card-11-of-square.jpg">
+  <img class="hide" src="card-11-of-cicle.jpg">
+  <br>
+  <img class="hide" src="card-11-of-cross.jpg">
+  <img class="hide" src="card-11-of-star.jpg">
+  <img class="hide" src="card-12-of-square.jpg">
+  <img class="hide" src="card-12-of-cicle.jpg">
+  <img class="hide" src="card-12-of-cross.jpg">
+  <img class="hide" src="card-12-of-star.jpg">
+  <img class="hide" src="card-13-of-square.jpg">
+  <br>
+  <img class="hide" src="card-13-of-cicle.jpg">
+  <img class="hide" src="card-13-of-cross.jpg">
+  <img class="hide" src="card-13-of-star.jpg">
+  <img class="hide" src="card-14-of-square.jpg">
+  <img class="hide" src="card-14-of-cicle.jpg">
+  <img class="hide" src="card-14-of-cross.jpg">
+  <img class="hide" src="card-14-of-star.jpg">
+   
+  -->
+</div>
+
+<footer>
+  <p> check out my other game
+    🔗 <a href="https://dcyrpsgame.netlify.app">RockPaperScissors</a></p>
+  <p> © DCY</p>
+</footer>
+  
+  <script>
+    
+    var cards = document.querySelectorAll("img");
+    var win = new Audio('win.mp3');
+    var loss = new Audio('loss.wav');
+    
+    var firstPlay = 0;
+    var secPlay = 0;
+    
+    
+    Array.from(cards).forEach(function(card){
+      card.addEventListener('click', function(e) {
+      
+      //console.log(e.target)
+      //console.log(e)
+      
+      if (firstPlay == 0){
+        card.className = "show"
+        firstPlay = card;
+        
+      }else if (secPlay == 0){
+        card.className = "show"
+        secPlay = card;
+        setTimeout('wins()', 2500);
+      }   
+    })
+  })
+    
+    function wins() {
+      if (firstPlay.src == secPlay.src){
+        //console.log("match");
+        
+        win.play();
+        setTimeout(() => {
+          win.pause();
+        }, 1000);
+        
+        firstPlay.style.border = " 2px solid green";
+        secPlay.style.border = " 2px solid green";
+        firstPlay.style.opacity = " 0.5";
+        secPlay.style.opacity = " 0.5";
+        
+        firstPlay = 0;
+        secPlay = 0;
+        
+      }else {
+        firstPlay.className = "hide";
+        secPlay.className = "hide"
+        //console.log("no mtach");
+        
+        loss.play();
+        setTimeout(() => {
+          loss.pause();
+        }, 1000);
+        
+        firstPlay = 0;
+        secPlay = 0;
+      }
+    }
+    
+    function shuffleImages() {
+      var imageCont =
+          document.querySelector('.imageContainer');
+      var images =
+   Array.from(imageCont.getElementsByTagName('img'));
+
+  // Shuffle the images
+      for (let i = images.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        [images[i], images[j]] = [images[j], 
+          images[i]];
+      }
+
+  // Remove all images from the container
+      while (imageCont.firstChild) {
+        imageCont.removeChild(imageCont.firstChild);
+      }
+
+  // Append the shuffled images back to the container
+      images.forEach(image =>
+        imageCont.appendChild(image));
+    }
+    
+    //console.log(cards.length);
+    
+  </script>
+</body>
+</html>
